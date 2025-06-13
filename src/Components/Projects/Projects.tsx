@@ -1,4 +1,4 @@
-// import Projects from "./Projects.jsx";
+import ProjectSection from "./ProjectComponents/ProjectSection.tsx";
 import { styled } from "styled-components";
 
 export default function Projects() {
@@ -6,7 +6,7 @@ export default function Projects() {
     <ProjectContainer>
       <h2>PROJECTS</h2>
       <hr />
-      <Projects />
+      <ProjectSection />
     </ProjectContainer>
   );
 }

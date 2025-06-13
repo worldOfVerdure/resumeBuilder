@@ -1,13 +1,17 @@
-import ProjectGlance from "./ProjectGlance.jsx";
+import { type FC } from "react";
+import ProjectInfo from "./ProjectInfo.tsx";
+import { type ProjectType } from "./helpers/projectData.ts";
 import { styled } from "styled-components";
 
-export default function Project(props) {
+const SingularProject: FC<ProjectType> = (props) => {
   return (
     <ProjectContainer>
-      <ProjectGlance {...props} />
+      <ProjectInfo {...props} />
     </ProjectContainer>
   );
 }
+
+export default SingularProject;
 
 const ProjectContainer = styled.ul`
   

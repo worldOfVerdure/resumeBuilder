@@ -1,5 +1,5 @@
-// import Project from "./Project.jsx";
-// import PROJECTS from "./helpers/projectData.js";
+import { PROJECTS } from "./helpers/projectData.ts";
+import SingularProject from "./SingularProject.tsx";
 import { styled } from "styled-components";
 
 export default function Projects() {
@@ -7,7 +7,9 @@ export default function Projects() {
     <ProjectSection >
       <ul>
         {PROJECTS.map(project => {
-          return <Project project={project} key={project.title} />
+          return (
+            <SingularProject key={project.title} project={project} />
+          );
         })}
       </ul>
     </ProjectSection>
