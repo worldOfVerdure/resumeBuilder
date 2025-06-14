@@ -8,7 +8,7 @@ export default function Projects() {
       <ul>
         {PROJECTS.map(project => {
           return (
-            <SingularProject key={project.title} project={project} />
+            <SingularProject key={project.title} {...project} />
           );
         })}
       </ul>
