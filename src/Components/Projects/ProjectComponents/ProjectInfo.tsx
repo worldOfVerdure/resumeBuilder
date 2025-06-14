@@ -15,7 +15,8 @@ const ProjectInfo: FC<ProjectType> = ({ title, tech, githubLink }) => {
         <a href={githubLink} target="_blank" >GitHub</a>
       </ProjectInforHeader>
       <ProjectListContainer>
-
+        {/* map() DESCRIPTION. Will need some logic to select the correct, inner array. I can use
+        the title and get return the correct index. Use a simple switch statement in this file. */}
       </ProjectListContainer>
     </>
     
