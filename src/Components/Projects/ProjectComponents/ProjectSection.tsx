@@ -21,4 +21,8 @@ const ProjectSection = styled.section`
     margin: 1.8rem 0 0 0;
   }
 
+  & ul {
+    margin: 0;
+    padding: 0;
+  }
 `;

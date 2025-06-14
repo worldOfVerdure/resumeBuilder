@@ -1,4 +1,5 @@
-import {type FC} from "react";
+import DESCRIPTION from "./helpers/descriptions/generic.ts"; //Change file name for different text.
+import { type FC } from "react";
 import { type ProjectType } from "./helpers/projectData.ts";
 import { styled } from "styled-components";
 
@@ -6,13 +7,16 @@ const ProjectInfo: FC<ProjectType> = ({ title, tech, githubLink }) => {
   const techString = tech?.join(", ");
   return (
     <>
-      <ProjectInfoListContainer>
+      <ProjectInforHeader>
         <h3>{title}</h3>
         |
         <p>{techString}</p>
         |
         <a href={githubLink} target="_blank" >GitHub</a>
-      </ProjectInfoListContainer>
+      </ProjectInforHeader>
+      <ProjectListContainer>
+
+      </ProjectListContainer>
     </>
     
   );
@@ -20,8 +24,17 @@ const ProjectInfo: FC<ProjectType> = ({ title, tech, githubLink }) => {
 
 export default ProjectInfo;
 
-const ProjectInfoListContainer = styled.ul`
+const ProjectInforHeader = styled.div`
   align-items: center;
   display: flex;
-  gap: .5rem;
+  gap: 1rem;
+
+  & h3, p {
+    margin: 0;
+  }
+`;
+
+const ProjectListContainer = styled.ul`
+  margin: 0;
+  padding: 0;
 `;
