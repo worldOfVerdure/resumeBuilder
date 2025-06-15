@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import Resume from "./components/Resume.js";
+import Resume from "./components/Resume.tsx";
 
 function App() {
   
