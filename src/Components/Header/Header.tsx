@@ -48,8 +48,4 @@ const HeaderNav = styled.nav`
     font-size: 1.7rem;
     text-indent: -.4rem;
   }
-
-  & li > a {
-    color: #000;
-  }
 `;

@@ -13,14 +13,14 @@ const DESCRIPTION = [
   ],
   [
     "Built a dice game where players try to achieve a score of 21, with the ability to hold.",
-    "Used imperative JavaScript to control game logic, allowing players to hold and achieve 21.",
+    "Used imperative JavaScript to control game logic.",
     "Made dice game accessible with visual outlines and disabling buttons.",
-    "Coded all SVG's using simple geometry and algebra.",
+    "Coded all SVG's using simple geometry and algebra."
   ],
   [
     "Made a resume builder which allows the changing of text via .ts files.",
     "Rebuilt with tsx to catch a bug which the ts compiler helped me identify.",
-    "Used absolute CSS units to achieve A4 page size (8.5in x 11in)"
+    "Used absolute CSS units to achieve A4 page size (8.5in x 11in)."
   ]
 ];
 

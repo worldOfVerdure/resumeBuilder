@@ -1,9 +1,11 @@
 import DESCRIPTION from "./helpers/descriptions/generic.ts"; //Change file name for different text.
+import { indexRetrieval } from "./helpers/projectHelperFunctions.ts";
 import { type FC } from "react";
 import { type ProjectType } from "./helpers/projectData.ts";
 import { styled } from "styled-components";
 
 const ProjectInfo: FC<ProjectType> = ({ title, tech, githubLink }) => {
+  const projectIndex: number = indexRetrieval(title);
   const techString = tech?.join(", ");
   return (
     <>
@@ -15,11 +17,12 @@ const ProjectInfo: FC<ProjectType> = ({ title, tech, githubLink }) => {
         <a href={githubLink} target="_blank" >GitHub</a>
       </ProjectInforHeader>
       <ProjectListContainer>
-        {/* map() DESCRIPTION. Will need some logic to select the correct, inner array. I can use
-        the title and get return the correct index. Use a simple switch statement in this file. */}
+        {DESCRIPTION[projectIndex].map((listPoint, index) => {
+          return <li key={`${title} li ${index}`} >{listPoint}</li>;
+        })}
+        
       </ProjectListContainer>
     </>
-    
   );
 }
 
@@ -38,4 +41,10 @@ const ProjectInforHeader = styled.div`
 const ProjectListContainer = styled.ul`
   margin: 0;
   padding: 0;
+
+  & li {
+    list-style-position: inside;
+    list-style-type: disc;
+    text-indent: .8rem;
+  }
 `;

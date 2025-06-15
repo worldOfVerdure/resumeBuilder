@@ -14,5 +14,10 @@ const SingularProject: FC<ProjectType> = (props) => {
 export default SingularProject;
 
 const ProjectContainer = styled.ul`
-  
+  margin: 0 0 1rem 0;
+  padding: 0;
+
+  &:last-child {
+    margin: 0;
+  }
 `;

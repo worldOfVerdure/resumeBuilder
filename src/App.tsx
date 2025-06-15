@@ -19,6 +19,10 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  a {
+    color: #000;
+  }
+
   body {
     font-family: times-new-roman;
     font-size: 1.6rem;
