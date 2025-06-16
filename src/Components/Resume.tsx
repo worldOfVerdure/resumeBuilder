@@ -1,16 +1,18 @@
-import Projects from "./Projects/Projects.tsx";
+import Education from "./Education/Education.tsx";
 import Header from "./Header/Header.tsx";
+import Projects from "./Projects/Projects.tsx";
 import Skills from "./Skills/Skills.tsx";
 import { styled } from "styled-components";
 
 export default function Resume() {
   return (
     <ResumePage >
-      <SectionContainer>
+      <PageContainer>
         <Header />
         <Projects />
         <Skills />
-      </SectionContainer>
+        <Education />
+      </PageContainer>
     </ResumePage>
   );
 }
@@ -26,7 +28,7 @@ const ResumePage = styled.div`
   }
 `;
 
-const SectionContainer = styled.div`
+const PageContainer = styled.div`
   margin: 0 auto;
   width: 90%;
 `;
