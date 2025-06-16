@@ -36,10 +36,7 @@ const HeaderNav = styled.nav`
     display: flex;
     flex-wrap: wrap;
     gap: 4rem;
-    padding: 0;
     margin: 2rem auto 0;
-    max-height: 6rem;
-    max-width: 70%;
     width: fit-content;
   }
 

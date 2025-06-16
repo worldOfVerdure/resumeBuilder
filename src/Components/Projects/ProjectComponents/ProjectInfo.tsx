@@ -1,6 +1,6 @@
 import DESCRIPTION from "./helpers/descriptions/generic.ts"; //Change file name for different text.
-import { indexRetrieval } from "./helpers/projectHelperFunctions.ts";
 import { type FC } from "react";
+import { indexRetrieval } from "./helpers/projectHelperFunctions.ts";
 import { type ProjectType } from "./helpers/projectData.ts";
 import { styled } from "styled-components";
 
@@ -32,6 +32,7 @@ const ProjectInforHeader = styled.div`
   align-items: center;
   display: flex;
   gap: 1rem;
+  margin-bottom: .4rem;
 
   & h3, p {
     margin: 0;
@@ -39,9 +40,6 @@ const ProjectInforHeader = styled.div`
 `;
 
 const ProjectListContainer = styled.ul`
-  margin: 0;
-  padding: 0;
-
   & li {
     list-style-position: inside;
     list-style-type: disc;

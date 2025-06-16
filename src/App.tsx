@@ -2,8 +2,6 @@ import { createGlobalStyle } from "styled-components";
 import Resume from "./components/Resume.tsx";
 
 function App() {
-  
-
   return (
     <>
       <GlobalStyles />
@@ -32,5 +30,14 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     font-size: 62.5%;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
   }
 `;
