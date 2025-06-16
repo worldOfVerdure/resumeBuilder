@@ -19,7 +19,7 @@ const DESCRIPTION = [
   ],
   [
     "Made a resume builder which allows the changing of text via .ts files.",
-    "Rebuilt with tsx to catch a bug which the ts compiler helped me identify.",
+    "Rebuilt with tsx to catch a bug which the ts compiler helped me to identify.",
     "Used absolute CSS units to achieve A4 page size (8.5in x 11in)."
   ]
 ];
