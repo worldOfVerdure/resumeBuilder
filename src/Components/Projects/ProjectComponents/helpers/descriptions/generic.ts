@@ -1,7 +1,7 @@
 const DESCRIPTION = [
   [
     "Built a responsize match game with responsize images and number of tiles.",
-    "Implemented a Fisher-Yates Shuffle to achieve O(n) shuffle of my images array.",
+    "Implemented a Fisher-Yates Shuffle to achieve O(n) shuffle of images array.",
     "Served more appropriate image sizes with srcset and sizes attributes.",
     "Rendered a timer using the aynchronous setInterval method with delay of 25ms."
   ],

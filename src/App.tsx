@@ -21,10 +21,13 @@ const GlobalStyles = createGlobalStyle`
     color: #000;
   }
 
+  body, p, ul {
+    margin: 0;
+  }
+
   body {
     font-family: times-new-roman;
     font-size: 1.6rem;
-    margin: 0;
     width: fit-content;
   }
 
@@ -37,7 +40,6 @@ const GlobalStyles = createGlobalStyle`
   }
 
   ul {
-    margin: 0;
     padding: 0;
   }
 `;
