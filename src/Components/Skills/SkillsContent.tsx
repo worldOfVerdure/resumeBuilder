@@ -24,7 +24,7 @@ export default function SkillsContent() {
       <div><span>Version Control: </span>Git</div>
       <nav>
         <span>Coding Profile(s): </span>
-        <a href="https://codepen.io/worldOfVerdure">CodePen</a>
+        <a href="https://codepen.io/worldOfVerdure" target="_blank" >CodePen</a>
       </nav>
     </SkillContentContainer>
   );
