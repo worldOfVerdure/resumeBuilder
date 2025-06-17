@@ -18,7 +18,6 @@ export default function Resume() {
 }
 
 const ResumePage = styled.div`
-  border: .2rem solid #000;
   height: 11in;
   margin: 0 auto;
   width: 8.5in;
