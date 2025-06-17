@@ -31,6 +31,10 @@ const GlobalStyles = createGlobalStyle`
     width: fit-content;
   }
 
+  h3 {
+    margin: 1rem 0 .4rem 0;
+  }
+
   html {
     font-size: 62.5%;
   }

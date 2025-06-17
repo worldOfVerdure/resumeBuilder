@@ -6,10 +6,10 @@ export default function EducationContent() {
       <University>
         <NameDate>
           <p>University of Central Florida</p>
-          <p>2019 - 2022</p>
+          <p>2019 - 2021</p>
         </NameDate>
         <Major>
-          Earned 95 credit hours towards Bachelor in Computer Science w/ minor in mathematics | GPA: 3.7
+          Earned 76 credit hours towards Bachelor in Computer Science w/ minor in mathematics | GPA: 3.5
         </Major>
       </University>
       <University >
