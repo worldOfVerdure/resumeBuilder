@@ -18,7 +18,7 @@ export default function EducationContent() {
           <p>2012 - 2014</p>
         </NameDate>
         <Major>
-          Associate in Science in Mathematics | GPA: 3.8, Honors
+          Associate in Science in Mathematics | GPA: 3.75, Honors
         </Major>
       </University>
     </ul>
