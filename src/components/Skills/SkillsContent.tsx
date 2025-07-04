@@ -17,8 +17,11 @@ export default function SkillsContent() {
         <ul>
           <li>HTML</li>
           <li>CSS</li>
-          <li>ReactJS</li>
+          <li>ReactJS/TS</li>
           <li>Styled-Components</li>
+          <li>Vite</li>
+          <li>Node.js</li>
+          <li>NPM</li>
         </ul>
       </div>
       <div><span>Version Control: </span>Git</div>
