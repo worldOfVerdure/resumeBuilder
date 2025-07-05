@@ -3,7 +3,7 @@ import SingularProject from "./SingularProject.tsx";
 
 export default function Projects() {
   return (
-    <section >
+    <section>
       {PROJECTS.map(project => {
         return (
           <SingularProject key={project.title} {...project} />

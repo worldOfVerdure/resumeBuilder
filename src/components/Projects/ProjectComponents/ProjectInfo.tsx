@@ -6,6 +6,7 @@ import { styled } from "styled-components";
 
 const ProjectInfo: FC<ProjectType> = ({ title, tech, githubLink }) => {
   const projectIndex: number = indexRetrieval(title);
+  console.log(projectIndex);
   const techString = tech?.join(", ");
   return (
     <>
@@ -20,7 +21,6 @@ const ProjectInfo: FC<ProjectType> = ({ title, tech, githubLink }) => {
         {DESCRIPTION[projectIndex].map((listPoint, index) => {
           return <li key={`${title} li ${index}`} >{listPoint}</li>;
         })}
-        
       </ProjectListContainer>
     </>
   );

@@ -1,26 +1,26 @@
 const DESCRIPTION = [
   [
-    "Built a responsize match game with responsize images and number of tiles.",
-    "Implemented a Fisher-Yates Shuffle to achieve O(n) shuffle of images array.",
-    "Served more appropriate image sizes with srcset and sizes attributes.",
-    "Rendered a timer using the aynchronous setInterval method with delay of 25ms."
+    "Built a resume editor powered by .ts files for dynamic text control",
+    "Identified and resolved a type-checking bug by migrating to .tsx, improving overall stability",
+    "Applied absolute CSS units to achieve a print-ready layout (8.5in × 11in)"
   ],
   [
-    "Created a 3D cube by setting perspective and utlizing CSS methods rotate() and translate().",
-    "Controlled orientation of cube with range, radio and checkbox inputs.",
-    "Imperatively connected cube orientation values to be displayed under range inputs.",
-    "Rotation was achieved with the rotate3d() CSS function."
+    "Designed a responsive match game with adaptive images and dynamic tile count",
+    "Implemented a Fisher-Yates shuffle for O(n) randomization of the image array",
+    "Delivered scalable assets using srcset and sizes attributes",
+    "Rendered a timer using asynchronous setInterval updates every 25ms"
   ],
   [
-    "Built a dice game where players try to achieve a score of 21, with the ability to hold.",
-    "Used imperative JavaScript to control game logic.",
-    "Made dice game accessible with visual outlines and disabling buttons.",
-    "Coded all SVG's using simple geometry and algebra."
+    "Created a 3D cube using CSS perspective with rotate() and translate() transformations",
+    "Controlled cube orientation via range sliders, radio buttons, and checkboxes",
+    "Linked orientation values to dynamic display beneath input controls",
+    "Achieved smooth rotation using the rotate3d() CSS function"
   ],
   [
-    "Made a resume builder which allows the changing of text via .ts files.",
-    "Rebuilt with tsx to catch a bug which the ts compiler helped me to identify.",
-    "Used absolute CSS units to achieve A4 page size (8.5in x 11in)."
+    "Developed a dice game where players attempt to reach a score of 21 with a 'hold' feature",
+    "Implemented core game logic using imperative JavaScript",
+    "Enhanced accessibility with visual outlines and disabled button states",
+    "Coded all SVG elements using basic geometry and algebra"
   ]
 ];
 
