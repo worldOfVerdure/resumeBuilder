@@ -1,18 +1,16 @@
 import DESCRIPTION from "./helpers/descriptions/generic.ts"; //Change file name for different text.
 import { type FC } from "react";
-import { indexRetrieval } from "./helpers/projectHelperFunctions.ts";
+import { type ProjectTitle } from "./helpers/projectData.ts";
 import { styled } from "styled-components";
 
 type ProjectInfoProps = {
-  projectTitle: string;
+  projectTitle: ProjectTitle;
 };
 
 const ProjectInfo: FC<ProjectInfoProps> = ({ projectTitle }) => {
-   const projectIndex: number = indexRetrieval(projectTitle);
-  
   return (
     <ProjectListContainer>
-      {DESCRIPTION[projectIndex].map((listPoint, index) => {
+      {DESCRIPTION[projectTitle].map((listPoint, index) => {
         return <li key={`${projectTitle} li ${index}`} >{listPoint}</li>;
       })}
     </ProjectListContainer>
