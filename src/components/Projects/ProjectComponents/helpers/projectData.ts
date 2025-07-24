@@ -1,28 +1,48 @@
-const TECH_STACK = [
-  ["HTML", "CSS", "JS"],
-  ["HTML", "CSS", "JS"],
-  ["HTML", "CSS", "JS"],
-  ["HTML", "CSS", "TS", "TSX", "React", "Styled-Comp"]
-];
+const NUM_OF_PROJECTS = 4;
 
+//Tech Stack Starts
+const TECH_STACK = [
+  ["HTML", "CSS", "TS", "TSX", "React", "Styled-Comp"],
+  ["HTML", "CSS", "JS"],
+  ["HTML", "CSS", "JS"],
+  ["HTML", "CSS", "JS"]
+] as const;
+
+Object.freeze(TECH_STACK);
+
+type TechStack = typeof TECH_STACK[number];
+//Project Titles Start
 export const PROJECT_TITLES = [
+  "Resume Builder",
   "Match Game",
   "Rotate Cube",
-  "No Dice",
-  "Resume Builder"
+  "No Dice"
 ] as const;
 
 Object.freeze(PROJECT_TITLES);
 
 export type ProjectTitle = typeof PROJECT_TITLES[number];
+// GitHub link start
+const GITHUB_LINK = [
+  "https://github.com/worldOfVerdure/resumeBuilder",
+  "https://github.com/worldOfVerdure/GameNMatch",
+  "https://github.com/worldOfVerdure/rotateCube",
+  "https://github.com/worldOfVerdure/noDice"
+] as const;
 
-export class ProjectType {
-  constructor(public title: ProjectTitle, public tech: string[], public githubLink: string) {}
+type GithubLink = typeof GITHUB_LINK[number];
+// ProjectClassType class 
+export class ProjectClassType {
+  constructor(public title: ProjectTitle, public tech: TechStack, public githubLink: GithubLink) {}
 }
 
-const MATCH_GAME = new ProjectType(PROJECT_TITLES[0], TECH_STACK[0], "https://github.com/worldOfVerdure/GameNMatch");
-const ROTATE_CUBE = new ProjectType(PROJECT_TITLES[1], TECH_STACK[1], "https://github.com/worldOfVerdure/rotateCube");
-const NO_DICE = new ProjectType(PROJECT_TITLES[2], TECH_STACK[2], "https://github.com/worldOfVerdure/noDice");
-const RESUME_BUILDER = new ProjectType(PROJECT_TITLES[3], TECH_STACK[3], "https://github.com/worldOfVerdure/resumeBuilder");
-// To change the order of the projects, change the order of these ProjectType objects.
-export const PROJECTS = [RESUME_BUILDER, MATCH_GAME, ROTATE_CUBE, NO_DICE];
+export const PROJECTS: ProjectClassType[] = [];
+
+for(let i=0; i < NUM_OF_PROJECTS; ++i) {
+  const tempProject: ProjectClassType = new ProjectClassType(
+    PROJECT_TITLES[i],
+    TECH_STACK[i], 
+    GITHUB_LINK[i]
+  );
+  PROJECTS.push(tempProject);
+}

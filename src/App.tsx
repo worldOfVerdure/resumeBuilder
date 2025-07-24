@@ -7,7 +7,7 @@ function App() {
       <GlobalStyles />
       <Resume />
     </>
-  )
+  );
 }
 
 export default App;
